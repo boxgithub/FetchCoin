@@ -122,7 +122,7 @@ while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
 
-    coindata = GetCoin('1, 1027, 2130')
+    coindata = GetCoin('1,1027,2130')
     draw.text((x, top), "BTC: "+GetPrice('1', coindata),  font=font, fill=255)
     draw.text((x, top+8), "ETH: "+GetPrice('1027', coindata), font=font, fill=255)
     draw.text((x, top+16), "ENJ: "+GetPrice('2130', coindata), font=font, fill=255)
