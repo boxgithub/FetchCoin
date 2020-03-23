@@ -1,5 +1,6 @@
 import time
 import sys
+sys.path.append('/home/pi/FetchCoin/')
 sys.path.append('./drive')
 import SPI
 import SSD1305
