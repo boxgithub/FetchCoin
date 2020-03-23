@@ -131,4 +131,5 @@ while True:
     # Display image.
     disp.image(image)
     disp.display()
-    time.sleep(600)
+    time.sleep(300)
+    print('Sleeping for 300 seconds')
