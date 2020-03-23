@@ -123,8 +123,10 @@ while True:
 
 
     coindata = GetCoin('1, 1027, 2130')
-    draw.text((x, top), "BTC: ",  font=font, fill=255)
-
+    draw.text((x, top), "BTC: "+GetPrice('1', coindata),  font=font, fill=255)
+    draw.text((x, top+8), "ETH: "+GetPrice('1027', coindata), font=font, fill=255)
+    draw.text((x, top+16), "ENJ: "+GetPrice('2130', coindata), font=font, fill=255)
+    draw.text((x, top+24), "-- "+str(datetime.now().strftime('%H:%M:%S')), font=font, fill=255)
 
     # Display image.
     disp.image(image)
